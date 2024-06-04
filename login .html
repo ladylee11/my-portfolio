@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Back - Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #f5f5f5;
+        }
+        
+        .login-container {
+            background: white;
+            padding: 20px 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 100%;
+            max-width: 400px;
+        }
+        
+        h1 {
+            margin-bottom: 10px;
+            color: #333;
+        }
+        
+        p {
+            margin-bottom: 20px;
+            color: #777;
+        }
+        
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        input[type="email"], input[type="password"] {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        
+        .forgot-password {
+            margin-bottom: 20px;
+            font-size: 14px;
+            color: #007BFF;
+            align-self: flex-end;
+        }
+        
+        .login-btn {
+            padding: 10px;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        .login-btn:hover {
+            background-color: #007BFF;
+        }
+        
+        .alternative-login {
+            margin: 20px 0;
+            color: #777;
+        }
+        
+        .social-login {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .google-btn {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+        
+        .google-btn:hover {
+            background: #f5f5f5;
+        }
+        
+        @media (max-width: 480px) {
+            .login-container {
+                padding: 15px 20px;
+            }
+        
+            input[type="email"], input[type="password"] {
+                font-size: 14px;
+            }
+        
+            .login-btn, .google-btn {
+                font-size: 14px;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h1>Welcome Back!</h1>
+        <p>New to my portfolio? <a href="#">Join Us</a></p>
+        <form action="#" method="post">
+            <input type="email" name="email" placeholder="Your Email" required>
+            <input type="password" name="password" placeholder="Your Password" required>
+            <a href="#" class="forgot-password">Forgot your password?</a>
+            <button type="submit" class="login-btn">Sign In</button>
+        </form>
+        <p class="alternative-login">or Sign In with</p>
+        <div class="social-login">
+            <button class="google-btn">Google</button>
+        </div>
+    </div>
+</body>
+</html>
